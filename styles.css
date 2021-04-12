@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+*,
+:active,
+:hover {
+  outline: none;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background: white;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background: black;
+  color: white;
+  font-size: 2rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background: grey;
+}
+
+li a,
+.sluzba-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+li {
+  flex: 1;
+}
+
+.sluzba-btn {
+  border: none;
+  background: grey;
+  color: white;
+  font-family: "Space Grotesk";
+  width: 100%;
+  position: sticky;
+  top: 3rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sluzba-content,
+.about-content {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 0rem;
+  margin: auto;
+  line-height: 1.9;
+}
+
+.sluzba-content {
+  display: none;
+  width: 60%;
+}
+
+.sluzba-content p {
+  text-align: center;
+  color: black;
+}
+
+.price {
+  margin: 0.3rem 0 0.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.active {
+  background: black;
+}
+
+.about-content {
+  display: flex;
+  padding: 0.5rem 0 0 0;
+  width: 90%;
+}
+
+h3 {
+  padding: 1rem 0rem 0.2rem 0rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.first-h3 {
+  padding-top: 1.7rem;
+}
+
+.kontakt {
+  line-height: 1.9;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barberman-img {
+  height: 30vh;
+  cursor: pointer;
+}
+
+.barberman-content {
+  display: none;
+  padding: 0.5rem 0;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.kontakt-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: grey;
+  color: white;
+  height: 3rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url("./img/header-pic.jpg");
+    background-size: cover;
+    height: 30vh;
+    font-size: 3rem;
+  }
+
+  main {
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    width: 70%;
+    margin: auto;
+  }
+
+  main {
+    margin-bottom: 3rem;
+  }
+
+  header {
+    height: 30vh;
+    font-size: 3rem;
+  }
+
+  .bcg-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .first-h3 {
+    padding: 1rem 0rem 0.2rem 0rem;
+  }
+
+  .about {
+    margin: 0;
+  }
+
+  .about-content {
+    padding: 0;
+    margin: 0;
+  }
+
+  .barberman-content {
+    width: 40%;
+  }
+
+  footer {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  body {
+    width: 70%;
+    margin: auto;
+  }
+
+  main {
+    margin-bottom: 3rem;
+  }
+
+  header {
+    height: 30vh;
+    font-size: 3rem;
+  }
+
+  footer {
+    width: 70%;
+  }
+}
